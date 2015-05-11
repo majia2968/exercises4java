@@ -1,4 +1,4 @@
-package com.majava.string;
+package com.myjava.string;
 
 public class MyStringBytes {
 
