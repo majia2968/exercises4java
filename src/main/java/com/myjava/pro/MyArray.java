@@ -8,23 +8,15 @@ public class MyArray {
 	
 	public int findMiddlePoint(int[] arr) throws Exception {
 		
-		for (int i  : arr) {
-			sum += i;
-		}
-		
-		System.out.println(sum);
+		for (int e : arr) sum += e;
 		
 		for (int j : arr) {
 			halfSum += j;
-			if (halfSum == (sum-j)/2) {
-				middle = j;
-			}
-			else {
-				System.out.println("Not found number in the array");
-				middle = 0;
+			if (halfSum == (sum/2)) {
+				return middle = j;
 			}
 		}
-		return middle;
+		return 0;
 	}
 
 }

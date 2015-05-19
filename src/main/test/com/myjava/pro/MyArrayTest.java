@@ -8,9 +8,9 @@ public class MyArrayTest {
 
 	@Test
 	public void test() throws Exception {
-		int[] arr = {1,4,7,3,9,2,5,8};
+		int[] arr = {1,4,7,3,2,5,8};
 		MyArray myArray = new MyArray();
-		assertEquals(myArray.findMiddlePoint(arr), 9);
+		assertEquals(myArray.findMiddlePoint(arr), 3);
 	}
 
 }
