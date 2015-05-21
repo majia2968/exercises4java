@@ -10,11 +10,6 @@ import com.myjava.reflection.UserService;
 import org.junit.Test;
 
 public class UserServiceTest {
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 	
 	@Test
 	public void testProxy() {
