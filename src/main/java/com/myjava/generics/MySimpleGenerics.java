@@ -37,5 +37,6 @@ class SimpleGeneric<T> {
 	// this method prints the holding parameter type
 	public void printType() {
 		System.out.println("Type: " + objReff.getClass().getName());
+		System.out.println(Integer.valueOf(4).getClass().getTypeName());
 	}
 }
