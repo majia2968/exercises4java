@@ -20,6 +20,24 @@ public class BinarySearch {
         return -1;
     }
     
+    public int recursiveSearch(int[] arr, int start, int end, int n) {
+    	int mid = (start + end) / 2;
+    	if (start < end) {
+    		if (n == arr[mid]) {
+    			return mid;
+    		}
+    		if (n < arr[mid]){
+    			end = mid - 1;
+    			return recursiveSearch(arr, start, end, n);
+    		}
+    		else {
+    			start = mid + 1;
+    			return recursiveSearch(arr, start, end, n);
+    		}
+    	}
+    	return -1;
+    }
+    
     public static void main(String[] args) {
         
         BinarySearch mbs = new BinarySearch();
