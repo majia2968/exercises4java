@@ -22,7 +22,7 @@ public class BinarySearch {
     
     public int recursiveSearch(int[] arr, int start, int end, int n) {
     	int mid = (start + end) / 2;
-    	if (start < end) {
+    	if (start <= end) {
     		if (n == arr[mid]) {
     			return mid;
     		}

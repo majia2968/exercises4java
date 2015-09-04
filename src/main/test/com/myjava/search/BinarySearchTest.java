@@ -20,7 +20,7 @@ public class BinarySearchTest {
 		BinarySearch bs = new BinarySearch();
         int[] arr = {2, 4, 6, 8, 10, 12, 14, 16};
 		assertEquals(bs.recursiveSearch(arr,0,7,14), 6);
-		assertEquals(bs.recursiveSearch(arr,0,7,16), 7);
+		assertEquals(bs.recursiveSearch(arr,0,7,6), 2);
 		
 	}
 
