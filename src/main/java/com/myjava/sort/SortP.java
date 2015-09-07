@@ -63,6 +63,19 @@ public class SortP {
 		if ( tmp < right) quickSort1(tmp, right, arr);
 		return arr;
 	}
+	
+	public void insertionSort(int[] arr) {
+		int size = arr.length;
+		for (int i = 1; i < size; i++) {
+			for(int j = i -1; j >= 0; j--) {
+				if (arr[j] > arr[i]) { 
+					swap(i, j ,arr);
+					i--;
+				}
+			}
+		}
+	}
+
 
 	public static void main(String[] args) {
 		SortP sp = new SortP();
@@ -70,8 +83,9 @@ public class SortP {
 		int[] arr = { 7, 8, 4, 9, 10, 3, 7, 1, 7 };
 		int[] arr1 = {34,4,65,24,17,43,6,45,4,24,35};
 		// sp.partition(0, 8, arr);
-		sp.quickSort1(0, 8, arr);
-		sp.quickSort1(0, 10, arr1);
+//		sp.quickSort1(0, 8, arr);
+//		sp.quickSort1(0, 10, arr1);
+		sp.insertionSort(arr1);
 		System.out.println(Arrays.toString(arr));
 		System.out.println(Arrays.toString(arr1));
 //		sp.quickSort(0, 8, arr);
