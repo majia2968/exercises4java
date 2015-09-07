@@ -75,6 +75,16 @@ public class SortP {
 			}
 		}
 	}
+	
+	public void selectionSort(int[] arr) {
+		for (int i = arr.length - 1; i > 0; i--) {
+			for( int j = 0; j < i; j++) {
+				if (arr[j] > arr[j+1]) {
+					swap(j, j+1, arr);
+				}
+			}
+		}
+	}
 
 
 	public static void main(String[] args) {
@@ -86,6 +96,7 @@ public class SortP {
 //		sp.quickSort1(0, 8, arr);
 //		sp.quickSort1(0, 10, arr1);
 		sp.insertionSort(arr1);
+		sp.selectionSort(arr);
 		System.out.println(Arrays.toString(arr));
 		System.out.println(Arrays.toString(arr1));
 //		sp.quickSort(0, 8, arr);
