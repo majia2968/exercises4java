@@ -24,12 +24,15 @@ public class MergeSort {
 	}
 
 	public void mergeParts(int low, int middle, int high) {
+		// Copy both parts into the helper array
 		for (int i = low; i <= high; i++) {
 			tmpArr[i] = arr[i];
 		}
 		int i = low;
 		int j = middle + 1;
 		int k = low;
+	    // Copy the smallest values from either the left or the right side back
+	    // to the original array
 		while (i <= middle && j <= high) {
 			if (tmpArr[i] <= tmpArr[j]) {
 				arr[k] = tmpArr[i];
@@ -40,6 +43,7 @@ public class MergeSort {
 			}
 			k++;
 		}
+		 // Copy the rest of the left side of the array into the target array
 		while (i <= middle) {
 			arr[k] = tmpArr[i];
 			k++;
